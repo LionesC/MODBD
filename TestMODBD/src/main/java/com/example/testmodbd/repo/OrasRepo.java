@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrasRepo {
-
     public static String urlGlobal = "jdbc:oracle:thin:@localhost:1521:orcl1";
     public static String urlLocalBuc = "jdbc:oracle:thin:@localhost:1521:orcl";
     public static String urlLocalProv = "jdbc:oracle:thin:@localhost:1521:orcl2";
@@ -14,15 +13,15 @@ public class OrasRepo {
     public static String parola = "proiect";
     public static String driver = "oracle.jdbc.driver.OracleDriver";
 
-    public OrasRepo(){
-
-    }
-
     public Connection Conectare() throws ClassNotFoundException, SQLException {
         Class.forName(driver);
         Connection connection = DriverManager.getConnection(urlGlobal, utilizator, parola);
         System.out.println("Conexiune reusita");
         return connection;
+    }
+
+    public OrasRepo(){
+
     }
 
 

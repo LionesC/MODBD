@@ -24,4 +24,10 @@ public class Bautura {
         this.id_bautura = id_bautura;
         this.alcoolic = alcoolic;
     }
+
+    public String getValues(){
+        return "("
+                + this.getId_bautura() + ",'"
+                + this.getAlcoolic() + "')";
+    }
 }

@@ -44,4 +44,12 @@ public class ProdusComanda {
         this.pret = pret;
         this.cantitate = cantitate;
     }
+
+    public String getValues(){
+        return "("
+                + this.getId_produs() + ","
+                + this.getId_comanda() + ","
+                + this.getPret() + ","
+                + this.getCantitate() + ")";
+    }
 }

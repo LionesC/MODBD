@@ -44,4 +44,12 @@ public class Produs {
         this.pret = pret;
         this.categorie = categorie;
     }
+
+    public String getValues(){
+        return "("
+                + this.getId_produs() + ",'"
+                + this.getNume() + "',"
+                + this.getPret() + ",'"
+                + this.getCategorie() + "',";
+    }
 }

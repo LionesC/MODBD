@@ -54,4 +54,13 @@ public class Client {
         this.email = email;
         this.nr_telefon = nr_telefon;
     }
+
+    public String getValues(){
+        return "("
+                + this.getId_client() + ",'"
+                + this.getNume() + "','"
+                + this.getPrenume() + "','"
+                + this.getEmail() + "','"
+                + this.getNr_telefon() + "')";
+    }
 }

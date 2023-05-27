@@ -34,4 +34,11 @@ public class Pizza {
         this.tip_blat = tip_blat;
         this.vegetarian = vegetarian;
     }
+
+    public String getValues(){
+        return "("
+                + this.getId_pizza() + ".'"
+                + this.getTip_blat() + "','"
+                + this.getVegetarian() + "')";
+    }
 }
